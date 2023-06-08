@@ -8,7 +8,7 @@ export class Searchbar extends Component {
   state = { query: '',};
 
   handleChange = e => {
-    this.setState({ query: e.currentTarget.value.toLowerCase().trim() });
+    this.setState({ query: e.currentTarget.value.toLowerCase() });
   };
 
   handleSubmit = event => {
@@ -22,7 +22,7 @@ export class Searchbar extends Component {
     }
 
     onSubmit(query);
-    this.setState({ query: '' });
+    this.setState({ query: ''});
   };
 
   render() {
